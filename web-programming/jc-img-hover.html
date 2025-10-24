@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #img{
+        background-image:url(/1747829.png);
+        width: 300px;
+        background-size: contain;
+        height: 300px;
+    }
+</style>
+<body>
+    <div onmouseover="change()" onmouseout="cng()" id="img">
+
+    </div>
+
+    <script>
+        var img=document.getElementById('img');
+        function change(){
+            img.style.backgroundImage="url('1747779.png')";
+        }
+        function cng(){
+            img.style.backgroundImage="url('1747829.png')";
+        }
+    </script>
+</body>
+</html>
