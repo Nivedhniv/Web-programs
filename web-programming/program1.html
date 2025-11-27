@@ -7,95 +7,46 @@
 </head>
 <style>
     *{
-        font-family: sans-serif;
-    }
-    body{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .profile img{
-        width:200px;
-        height:200px;
-        object-fit: cover;
-        border-radius: 20px;
-    }
-    .profile{
-        padding: 10px;
-        background-color: rgb(255, 244, 141);
-        width:240px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 10px;
-        transform: translateY(0px);
-        transition: transform 400ms;
-    }
-    .details{
-        width:200px;
-        text-align: left;
-        padding: 10px;
-        border:1px solid black;
-        margin-top:10px;
-        border-radius: 20px;
-    }
-    .details-more{
-        width:200px;
-        text-align: left;
-        padding: 0px;
-        border:1px solid black;
-        margin-top:10px;
-        border-radius: 20px;
-        padding-top:5px;
-        padding-bottom: 10px;
-    }
-    .profile:hover{
-        transform: translateY(-20px);
-        transition: transform 400ms;
-    }
-    h4,a{
-        padding-left: 10px;
-        margin: 0px;
-    }
-    ul{
-        padding-left: 30px;
-        margin: 0px;
-    }
-    a{
-        color: red;
-        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 <body>
-    <div class="profile">
-        <h3>Student details</h3>
-        <img src="/img/hq720.jpg">
-        <table class="details">
-            <tr><td>Name </td><td>:Blob</td></tr>
-            <tr><td>Uni Name</td><td>:Kunia</td></tr>
-            <tr><td>Course </td><td>:Mca</td></tr>
-        </table>
-    </div >
-    <div class="profile">
-        <table class="details">
-            <tr><th>Subject</th><th>Marks</th></tr>
-            <tr><td>Maths</td><td>:40</td></tr>
-            <tr><td>DS</td><td>:40</td></tr>
-            <tr><td>Python</td><td>:40</td></tr>
-            
-        </table>
-        <div class="details-more">
-            <h4>hobbies</h4>
-            <ol>
-                <li>coding</li>
-                <li>Singing</li><li>Spinng</li><li>Reading</li><li>Running around</li>
-            </ol>
-            <h4>University website</h4>
-            <a href="http://127.0.0.1:5500/web-programming/program1.html" target="_blank">check us out</a>
-        </div>
-    </div>
+    <h2>
+        basic tags
+    </h2>
+    <p>this is a paragraph</p>
+    <br>
+    <i>this is italics</i>
+    <br>
+    <b>this is strong</b><br>
+    <u>this is underlined text</u><br>
+    <a href="https://www.google.com/" target="_blank">this is a hyperlink to google.com</a><br>
+    <h2>lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <br>
+    <h2>ordered list</h2>
+    <ol>
+        <li>fist</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+<br>
+    <table border="1">
+        <tr><th>Name</th><th>Age</th><th>occupation</th></tr>
+        <tr><td>Nivedh</td><td>22</td><td>sr.software designer</td></tr>
+        <tr><td>Athul</td><td>22</td><td>sr.game developer</td></tr>
+        <tr><td>Meghanad</td><td>22</td><td>sr.data engineer</td></tr>
+    </table>
+    <br>
+    <form method="post">
+        <label for="name">Name:</label><input type="text" id="name" required placeholder="Name"><br><br>
+        <label for="mail">Email:</label><input type="text" id="mail" required placeholder="Email ID"><br><br>
+        <label for="msg">Message :<br></label><textarea id="msg" rows="5" cols="50" required placeholder="compose your message"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
