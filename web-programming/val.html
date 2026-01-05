@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    Name:<br>
+    <input type="text" id="name"><br><br>
+
+    Email:<br>
+    <input type="text" id="email"><br><br>
+
+    Password:<br>
+    <input type="password" id="pwd1"><br><br>
+
+    Confirm Password:<br>
+    <input type="password" id="pwd2"><br><br>
+
+    <input type="submit" value="Register" onclick="validate()">
+
+</form>
+<script>
+
+    function validate(){
+        if(pwd1.value!=pwd2.value){
+            alert("passwords not the same")
+        }
+        else{
+            alert("passords arer same")
+        }
+    }
+</script>
+
+</body>
+</html>
