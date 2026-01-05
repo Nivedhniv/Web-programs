@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Exam</title>
+</head>
+<body>
+
+<h2>Online Examination</h2>
+
+<form name="exam">
+
+    <p>1. HTML stands for?</p>
+    <input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+    <input type="radio" name="q1" value="b"> High Text Machine Language<br>
+
+    <p>2. JavaScript is a?</p>
+    <input type="radio" name="q2" value="a"> Programming Language<br>
+    <input type="radio" name="q2" value="b"> Database<br>
+
+    <br>
+    <input type="button" value="Submit" onclick="check()">
+
+</form>
+
+<p id="result"></p>
+
+<script>
+function check() {
+    let score = 0;
+
+    if (document.exam.q1.value == "a") {
+        score++;
+    }
+
+    if (document.exam.q2.value == "a") {
+        score++;
+    }
+
+    document.getElementById("result").innerHTML =
+        "You scored " + score + "/2";
+}
+</script>
+
+</body>
+</html>
